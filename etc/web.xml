@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee/web-apps_2_4.xsd"
+	version="2.4">
+
+
+	<servlet>
+		<servlet-name>ParamTests</servlet-name>
+		<servlet-class>test.TestInitParams</servlet-class>
+
+		<init-param>
+			<param-name>adminEmail</param-name>
+			<param-value>john.westerman@gmail.com</param-value>
+		</init-param>
+
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ParamTests</servlet-name>
+		<url-pattern>/testInitParams</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>Beer</servlet-name>
+		<servlet-class>com.example.web.BeerSelect</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Beer</servlet-name>
+		<url-pattern>/SelectBeer</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>BeerTest</servlet-name>
+		<servlet-class>test.BeerExpertTest</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>BeerTest</servlet-name>
+		<url-pattern>/test</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ImageGrab</servlet-name>
+		<servlet-class>com.example.web.ImageGrabber</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ImageGrab</servlet-name>
+		<url-pattern>/Ruth</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>Mp3Grab</servlet-name>
+		<servlet-class>com.example.web.Mp3Grabber</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Mp3Grab</servlet-name>
+		<url-pattern>/Murphy</url-pattern>
+	</servlet-mapping>
+
+</web-app>
